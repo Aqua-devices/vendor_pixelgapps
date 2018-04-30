@@ -21,8 +21,9 @@ PRODUCT_PACKAGES += \
     GoogleCamera \
     GoogleContactsSyncAdapter \
     GoogleTTS \
-    Hangouts \
     talkback
+# DISABLED PACKAGES:
+#    Hangouts \
 
 # /framework
 PRODUCT_PACKAGES += \
@@ -42,7 +43,6 @@ PRODUCT_PACKAGES += \
     GooglePartnerSetup \
     GoogleServicesFramework \
     Phonesky \
-    PixelLauncher \
     PrebuiltGmsCore \
     DynamiteLoader.apk \
     DynamiteModulesA \
@@ -52,6 +52,8 @@ PRODUCT_PACKAGES += \
     GoogleCertificates \
     SetupWizard \
     Velvet
+# DISABLED PACKAGES:
+#    PixelLauncher
 
 # /symlinks
 PRODUCT_PACKAGES += \
