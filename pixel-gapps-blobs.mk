@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
 PRODUCT_COPY_FILES += \
     vendor/pixelgapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/pixelgapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
@@ -89,3 +91,5 @@ PRODUCT_COPY_FILES += \
     vendor/pixelgapps/usr/srec/en-US/voice_actions_compiler.config:system/usr/srec/en-US/voice_actions_compiler.config \
     vendor/pixelgapps/usr/srec/en-US/word_confidence_classifier:system/usr/srec/en-US/word_confidence_classifier \
     vendor/pixelgapps/usr/srec/en-US/wordlist.syms:system/usr/srec/en-US/wordlist.syms
+
+endif

@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
 #gapps blobs
 $(call inherit-product, vendor/pixelgapps/pixel-gapps-blobs.mk)
 
@@ -65,3 +67,5 @@ PRODUCT_PACKAGES += \
 # wallpaper location prop
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
+
+endif

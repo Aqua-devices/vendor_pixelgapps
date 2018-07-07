@@ -14,6 +14,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := AndroidPlatformServices
 LOCAL_MODULE_TAGS := optional
@@ -222,3 +224,5 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
+
+endif

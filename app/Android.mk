@@ -14,6 +14,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := FaceLock
 LOCAL_MODULE_TAGS := optional
@@ -86,3 +88,5 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
+
+endif
